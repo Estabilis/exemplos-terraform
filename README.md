@@ -5,6 +5,7 @@ Projetos completos em Terraform para a Estabilis Cloud (OpenStack, região `br-s
 | Exemplo | O que sobe |
 | --- | --- |
 | [`web-lb-banco`](web-lb-banco/) | Rede privada, duas máquinas web com nginx, Load Balancer com IP público e PostgreSQL gerenciado com TLS |
+| [`kubernetes-registro`](kubernetes-registro/) | Cluster Kubernetes gerenciado, credencial do Container Registry do projeto e uma aplicação publicada a partir do registro com IP público |
 
 ## Antes de começar
 

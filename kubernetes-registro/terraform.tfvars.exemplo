@@ -1,0 +1,6 @@
+# Copie para terraform.tfvars (ignorado pelo git) e ajuste.
+nuvem    = "estabilis"
+prefixo  = "app"
+template = "k8s-v1.37.1-managed"
+nos      = 1
+chave    = "minha-chave"   # par de chaves já cadastrado no projeto
