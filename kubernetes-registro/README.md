@@ -19,7 +19,8 @@ Depois, um manifesto de exemplo (`app.yaml`) publica o nginx a partir do cache d
 ## Subir
 
 ```sh
-cp terraform.tfvars.exemplo terraform.tfvars   # ajuste a chave e o número de nós
+cp terraform.tfvars.exemplo terraform.tfvars
+# ajuste a chave, o número de nós e os IPs que podem usar a API
 terraform init
 terraform apply
 ```
@@ -68,5 +69,6 @@ terraform destroy
 ## Ajustes comuns
 
 - `nos`: número de nós de trabalho.
+- `cidrs_api`: IPs ou redes (CIDR) autorizados a chegar à API do cluster, por exemplo `["203.0.113.10/32"]`; o template exige essa escolha na criação.
 - `template`: `k8s-v1.37.1-dedicated` para o plano de controle em máquinas do seu projeto.
 - `prefixo`: nome dos recursos, para subir mais de uma cópia no mesmo projeto.

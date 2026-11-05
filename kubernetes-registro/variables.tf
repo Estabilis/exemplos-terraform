@@ -16,6 +16,11 @@ variable "template" {
   default     = "k8s-v1.37.1-managed"
 }
 
+variable "cidrs_api" {
+  description = "IPs ou redes (CIDR) autorizados a chegar à API do cluster"
+  type        = list(string)
+}
+
 variable "nos" {
   description = "Quantidade de nós de trabalho"
   type        = number

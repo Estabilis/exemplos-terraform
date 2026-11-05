@@ -3,4 +3,5 @@ nuvem    = "estabilis"
 prefixo  = "app"
 template = "k8s-v1.37.1-managed"
 nos      = 1
+cidrs_api = ["203.0.113.10/32"]   # seu IP público (ou redes) que vai usar a API
 chave    = "minha-chave"   # par de chaves já cadastrado no projeto
