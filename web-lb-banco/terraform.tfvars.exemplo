@@ -1,0 +1,9 @@
+# Copie para terraform.tfvars (ignorado pelo git) e ajuste.
+nuvem          = "estabilis"
+prefixo        = "web"
+chave_publica  = "~/.ssh/id_ed25519.pub"
+plano_vm       = "s-1vcpu-1gb"
+quantidade_vms = 2
+# ID do plano do banco: openstack database flavor show db-s-1vcpu-2gb -c id
+plano_banco_id = ""
+# A senha do banco não vai em arquivo: export TF_VAR_senha_banco='...'
